@@ -12,7 +12,7 @@ body {
     display: grid;
     grid-template-columns: 30vw 30vw;
     grid-gap: 10px;
-    justify-content: center;    	
+    justify-content: center;   	
 }
 
 button {
@@ -43,5 +43,10 @@ button {
     background-color: yellow;
     display: grid;
     place-items: center;
+}
+
+
+.mole {
+    background-color: blue;
 }
 

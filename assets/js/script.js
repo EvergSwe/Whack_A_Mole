@@ -4,28 +4,24 @@ let timeLeft = document.getElementById("timeleft");
 let score = document.getElementById("score");
 
 function randomSquare() {
-   // for (let i=0; i<squares.length; i++) {
-   //     squares[i].remove("mole");
-   // }
+   for (let i=0; i<squares.length; i++) { //remove "old" mole before randomly placing a "new"
+   squares[i].classList.remove("mole");
+   }
 
+   let randomSquare = squares[Math.floor(Math.random() * 9)]; //generate random number between 0-8
+   randomSquare.classList.add("mole");
+   }
 
-    let randomSquare = squares[Math.floor(Math.random() * 9)];
-    randomSquare.classList.add("mole");
+function startEasy() {
+   let timer = null
+   timer = setInterval(randomSquare, 1000)
+   }
 
-    console.log("randomSquare")
+function startHard() {
+   let timer = null
+   timer = setInterval(randomSquare, 700)
+   }
 
-    }
+   startHard()
 
-    randomSquare()
-
-   // function startEasy() {
-   //     let timer = null
-   //     timer = setInterval(randomSquare, 1000)
-   // }
-
-    //startEasy()
-
-    /**
-     * when adding Function StartEasy bug of removing old randomSquare was detected
-     * when adding Loop to remove mole from classList everyting was removed.. continue tomorrow 
-     */
+   

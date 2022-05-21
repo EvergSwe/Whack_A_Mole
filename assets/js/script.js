@@ -1,7 +1,6 @@
 let score = document.getElementById("score");
-
-//global 
-let timer = null; 
+let result = 0;
+let timer = null;
 
 /**
  * onclick easy-game button, start easy game with interval 1s
@@ -9,6 +8,7 @@ let timer = null;
  */
 function startEasy() {   
    timer = setInterval(randomSquare, 1000);
+   //startValues();
    countDownSeconds();
 }
 
@@ -18,6 +18,7 @@ function startEasy() {
  */
 function startHard() {
    timer = setInterval(randomSquare, 700);
+   //startValues();
    countDownSeconds();
 }
 
@@ -38,6 +39,7 @@ function countDownSeconds() {
       clearInterval(countDownTimer);
       clearInterval(timer)
       time.innerHTML = 5; // change to 30 when finalizing
+      score.innerHTML = 0;
       alert("GAME OVER!");
       }
    }, 1000);
@@ -47,13 +49,12 @@ function countDownSeconds() {
 /**
  * remove "old" mole before randomly placing a "new"
  * generate random integer between 0-8 and place mole
- * get moleLocation square id
+ * check mouse down location if position == moleLocation if it does result++ else result
  */
 function randomSquare() {
 
    let squares = document.getElementsByClassName("square");
-   let mole = document.getElementsByClassName("mole");
-
+   
    for (let i=0; i<squares.length; i++) { 
    squares[i].classList.remove("mole");
    }
@@ -64,7 +65,15 @@ function randomSquare() {
    let moleLocation = randomSquare.id;
    console.log(moleLocation) //Remove when finalizing
 
-//check mouse down location if position == moleLocation if it does result++ else result
+   for (let i=0; i<squares.length; i++) {
+      squares[i].addEventListener("mousedown", function() {
+         if (squares[i].id == moleLocation) {
+            result++;
+            score.innerHTML = result;
+            moleLocation = null;
+         }      
+      })
+   }
 
 }
 

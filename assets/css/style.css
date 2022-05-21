@@ -13,13 +13,15 @@ body {
 .start-area {
     display: grid;
     grid-template-columns: 30vw 30vw;
-    grid-gap: 10px;
+    grid-gap: 20px;
     justify-content: center;   	
 }
 
 button {
     font-size: 20px;
     text-align: center;
+    color: orange;
+    background-color: blue;
 }
 
 .time-area, .score-area {
@@ -31,7 +33,7 @@ button {
 .time, .score {
     font-size: 30px;
     text-align: center;
-    color: azure;
+    color: orange;
 }
 
 .game-area {
@@ -44,7 +46,7 @@ button {
 }
 
 .square {
-    background-color: yellow;
+    background-color: green;
     display: grid;
     place-items: center;
     
@@ -54,12 +56,40 @@ button {
 .mole {
     background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
     background-image: url(../images/mole_in_game.png);
     
 }
 
-#game-area {
-    font-size: 50px;
-    color: orange;
-    text-shadow: gray;
+
+@media screen and (min-width: 768px) {
+    .game-area {
+        display: grid;
+        grid-gap: 5px;
+        grid-template-columns: repeat(3, 20vw);
+        grid-template-rows: repeat(3, 20vw);
+        justify-content: center;
+        
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .game-area {
+        display: grid;
+        grid-gap: 5px;
+        grid-template-columns: repeat(3, 10vw);
+        grid-template-rows: repeat(3, 10vw);
+        justify-content: center;
+        
+    }
+    button {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .time, .score {
+        font-size: 50px;
+        text-align: center;
+        color: azure;
+    }
 }

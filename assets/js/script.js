@@ -17,7 +17,7 @@ function startEasy() {
  * and start the timeleft count down
  */
 function startHard() {
-   timer = setInterval(randomSquare, 700);
+   timer = setInterval(randomSquare, 600);
    countDownSeconds();
 }
 
@@ -37,7 +37,7 @@ function countDownSeconds() {
    if (newTime === -1) {
       clearInterval(countDownTimer);
       clearInterval(timer)
-      time.innerHTML = 5; // change to 30 when finalizing
+      time.innerHTML = 15; // change to 30 when finalizing
       score.innerHTML = 0;
       result = 0;
       alert("GAME OVER!");
@@ -72,7 +72,7 @@ function randomSquare() {
             score.innerHTML = result;
             moleLocation = null;
             console.log(result)
-         }      
+         }   
       })
    }
 

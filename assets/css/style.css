@@ -1,11 +1,13 @@
 body {
     margin: 30px;
+    background-color: darkblue;
 }
 
 .heading {
     font-size: 40px;
     width: 100%;
 	text-align: center;
+    color: orange;
 }
 
 .start-area {
@@ -29,24 +31,35 @@ button {
 .time, .score {
     font-size: 30px;
     text-align: center;
+    color: azure;
 }
 
 .game-area {
     display: grid;
-    grid-gap: 2px;
+    grid-gap: 5px;
     grid-template-columns: repeat(3, 30vw);
     grid-template-rows: repeat(3, 30vw);
     justify-content: center;
+    
 }
 
 .square {
     background-color: yellow;
     display: grid;
     place-items: center;
+    
 }
 
 
 .mole {
-    background-color: green;    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../images/mole_in_game.png);
+    
 }
 
+#game-area {
+    font-size: 50px;
+    color: orange;
+    text-shadow: gray;
+}

@@ -1,30 +1,52 @@
-# Kayak Freedom
+# Whack A Mole
 
-![Responsive Test](/assests/.....
+![Responsive Test](/assets/images/responsive_check_Whack_a_mole.PNG)
 
-[View website on GitHub pages](https://evergswe.github.io/Whack_A_Mole/)
+[View website on GitHub pages](https://github.com/EvergSwe/Whack_A_Mole)
 
 [View website](https://evergswe.github.io/Whack_A_Mole/)
 
+## Introduction
+
+Playing digital games has become one of the most popular leisure activities for people of all ages, genders and backgrounds. But it has more advantages but leasure as training the different capabilities like
+reducing reaction time without compromising accuracy. This is discussed in this publication from 2009 (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2871325/). On the basis of this input I decided to develop
+an easy click game known as "whack a mole" for my second project using html, css and javascript syntax. The game has two levels of difficultis based on how long time the mole is visable before it moves to a randome
+new square in the grid and scores are collected based on number of hits e.g. "click" a mole. 
+
 ## UX process
 
-### Strategy
-Welcome to Kayaking Freedom - we provide kayaking cources for you to be safe out on the water, challenge yourself in small steps to be able to get close to the nature. We will prepare your skills for enjoyable experiences and lifelasting memories. Kayaking Freedom target middle age women and men who seek peace and harmony in life and in the same time keep up their health while doing so. Secondary target group are kids to target group one. Kayaking freedom love to see the whole family attending a course. Connecting with us should be easy.
+### User stories
+
+As a game user:
+- I would like to have fun and spend some time to Whack a Mole
+- I would like to understand the purpose with the game
+- I would like to know how to start the game
+- I would like to know what time it is left for the game
+- I would like to know when I hit a mole
+- I would like to know my score
+- I would like to have different levels of difficulties
+
+As a site owner:
+- I would like to give same game experiance no matter which device is used
+- I would like the game to be intuitive
+- I would like the User to continue to play the game on higher difficulties
+
 
 ### Scope
-Minimal viable product to be created for the purpose of user feedback. Functionality aligned with strategy, easy navigation and easy to connect with good usability. Content shall be telling the story of each section with a hearo image creating feelings and awareness about Freedom, Safety, exposed environment where the kayaker need to trust their own competence.
+The scope of this project is a MVP fulfilling requirements in Portfolio 2 Assessment Guide
 
 ### Structure & Skeleton
-Pen and paper were used to build up different versions of wireframes where multi-page vs. single page structure where evaluted. One Page design approched where choosed as the scope is flat one-subject and one dimensional information structure with intention to connect with Kayaking Freedom to know more about the courses.
+Based on the given user stories input and web search for whack a mole games a basic wireframe and functional diagram was created
+
+![Wireframe Whack a Mole](/assets/images/WireFrame_Whack_A_Mole.PNG)
+
+![Function Diagram](/assets/images/functional_diagram_Whack_A_Mole.PNG)
 
 ### Surface
- Natural color pattern chosed based on hero image toggle color picker of subject water, cliffs and sand to create consistancy between images and content.
- 
- ![color_schema](/assests/.....)
- 
- Font style of headings choosed in the sama natural theme and remaining text for primarly for readability.
 
-## Existing Features
+Based on retro game color schemas 
+
+## Features
 
 
 ### Development planned for next increment
@@ -37,29 +59,21 @@ Pen and paper were used to build up different versions of wireframes where multi
 
 ### Feature testing
 
-- [ ] test case 12, form reset button shall change color when hovering cursor over.
-  - [X] test case 12.1, Colors where switched and after corrections successful test
-
 
 ### Browser interface testing (UI)
-Above 15 test cases where performed in below browser to verify viewport and feature functionality.
+
 
 - Google Chrome (desktop device)
-  - full responsiveness confirmed in google devtools for all 15 test cases without any issues
+
 
 - Microsoft Edge (desktop device)
-  - full responsiveness confirmed in google devtools for all 15 test cases without any issues
+ 
 
 - Safari (mobile device)
-  - feature validation performed in mobile device as I had no access to desktop version.
-  - All 15 test cases passed the test
+
 
 - Internet Explorer
-  - Internet will soon be expired and replaced with Microsoft Edge
-  - Test performed with poor result and below diviations identified
-  - Rendering of webp images doesn't work
-  - Google responsive map is not supported
-  - Positioning of footer above form
+
 
 ### Automated testing
 
@@ -111,15 +125,6 @@ Automated testing of html, css programming language has been done by using third
 
 ### Content
 
-
 ### Media
 
-- [Hero image](https://www.sea....) Landing page image
-
-
 ### Code
-
-- General: Code institute - Coders Coffe house and Love Running project - Training material and video tutorials
-- General: Considerations and thinking about design:https://twitter.com/ravikmmr/status/1502607452029992965?s=12
-- HTML/CSS/Flexbox: Implementation and utilisation of Flexbox was assisted by CSS-Tricks and w3Schools
-- Iframe: https://blog.duda.co/responsive-google-maps-for-your-website

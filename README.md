@@ -1,108 +1,125 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Kayak Freedom
 
-Welcome EvergSwe,
+![Responsive Test](/assests/img/.....
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+[View website on GitHub pages](https://evergswe.github.io/Whack_A_Mole/)
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+[View website](https://evergswe.github.io/Whack_A_Mole/)
 
-## Gitpod Reminders
+## UX process
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+### Strategy
+Welcome to Kayaking Freedom - we provide kayaking cources for you to be safe out on the water, challenge yourself in small steps to be able to get close to the nature. We will prepare your skills for enjoyable experiences and lifelasting memories. Kayaking Freedom target middle age women and men who seek peace and harmony in life and in the same time keep up their health while doing so. Secondary target group are kids to target group one. Kayaking freedom love to see the whole family attending a course. Connecting with us should be easy.
 
-`python3 -m http.server`
+### Scope
+Minimal viable product to be created for the purpose of user feedback. Functionality aligned with strategy, easy navigation and easy to connect with good usability. Content shall be telling the story of each section with a hearo image creating feelings and awareness about Freedom, Safety, exposed environment where the kayaker need to trust their own competence.
 
-A blue button should appear to click: _Make Public_,
+### Structure & Skeleton
+Pen and paper were used to build up different versions of wireframes where multi-page vs. single page structure where evaluted. One Page design approched where choosed as the scope is flat one-subject and one dimensional information structure with intention to connect with Kayaking Freedom to know more about the courses.
 
-Another blue button should appear to click: _Open Browser_.
+### Surface
+ Natural color pattern chosed based on hero image toggle color picker of subject water, cliffs and sand to create consistancy between images and content.
+ 
+ ![color_schema](/assests/img/color_schema1.png)
+ 
+ Font style of headings choosed in the sama natural theme and remaining text for primarly for readability.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+## Existing Features
 
-A blue button should appear to click: _Make Public_,
 
-Another blue button should appear to click: _Open Browser_.
+### Development planned for next increment
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+- introduce a hammer for hitting the mole
+- adding a score message at the mole when hitted
 
-To log into the Heroku toolbelt CLI:
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+## Testing
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+### Feature testing
 
-------
+- [ ] test case 12, form reset button shall change color when hovering cursor over.
+  - [X] test case 12.1, Colors where switched and after corrections successful test
 
-## Release History
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+### Browser interface testing (UI)
+Above 15 test cases where performed in below browser to verify viewport and feature functionality.
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+- Google Chrome (desktop device)
+  - full responsiveness confirmed in google devtools for all 15 test cases without any issues
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+- Microsoft Edge (desktop device)
+  - full responsiveness confirmed in google devtools for all 15 test cases without any issues
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+- Safari (mobile device)
+  - feature validation performed in mobile device as I had no access to desktop version.
+  - All 15 test cases passed the test
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+- Internet Explorer
+  - Internet will soon be expired and replaced with Microsoft Edge
+  - Test performed with poor result and below diviations identified
+  - Rendering of webp images doesn't work
+  - Google responsive map is not supported
+  - Positioning of footer above form
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+### Automated testing
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+Automated testing of html, css programming language has been done by using third party tools. Google Chorme extension devtools, Lighthouse, has been used for general improvements of webpage quality. It has audits for performance, accessibility, progressive web apps, SEO
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+1. [HTML Validator by w3.org 'validator'](https://validator.w3.org/#validate_by_uri)
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+- Result
+![HTML Validator](/assests/img/....)
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+  - As select require None value option, adding 'option value="">None</option' resolved the error
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+2. [CSS Validator by w3.org 'jigsaw'](https://jigsaw.w3.org/css-validator/)
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+- Result
+  - Passed without remarks
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+3. [Google Chrome Lighthouse Extension](https://developers.google.com/web/tools/lighthouse)
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+- Lighthouse test mobile:
 
-------
+![Lighthouse mobile test](/assests/....)
 
-## FAQ about the uptime script
+- Lighthouse test desktop:
 
-**Why have you added this script?**
+![Lighthouse desktop test](/assests/......)
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+- Improvements note:
 
-**How will this affect me?**
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+  ### Test Conclution
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+- test summary
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+## Deployment
 
-**So….?**
+### Github deployment steps
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+1. Login into https://github.com/
+2. Select Kayak_Classes -> https://github.com/EvergSwe/Kayak_Classes
+3. Select Settings
+4. Scroll down to Gibhub Pages and select the link to dedicated tab
+5. Go to source drop down and select branch main, root and Save
+6. Page is now successfully published on Github Pages
+![Github pages published](/assests/.....)
 
-**Can I opt out?**
+## Credits
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+### Content
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
 
-**Anything more?**
+### Media
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+- [Hero image](https://www.sea....) Landing page image
 
----
 
-Happy coding!
+### Code
+
+- General: Code institute - Coders Coffe house and Love Running project - Training material and video tutorials
+- General: Considerations and thinking about design:https://twitter.com/ravikmmr/status/1502607452029992965?s=12
+- HTML/CSS/Flexbox: Implementation and utilisation of Flexbox was assisted by CSS-Tricks and w3Schools
+- Iframe: https://blog.duda.co/responsive-google-maps-for-your-website

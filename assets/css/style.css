@@ -1,10 +1,10 @@
 body {
-    margin: 30px;
+    margin: 10px;
     background-color: darkblue;
 }
 
 .heading {
-    font-size: 30px;
+    font-size: 20px;
     width: 100%;
 	text-align: center;
     color: orange;
@@ -13,7 +13,7 @@ body {
 .start-area {
     display: grid;
     grid-template-columns: 30vw 30vw;
-    grid-gap: 20px;
+    grid-gap: 15px;
     justify-content: center;
       	
 }
@@ -32,7 +32,7 @@ button {
 }
 
 .time, .score {
-    font-size: 20px;
+    font-size: 15px;
     text-align: center;
     color: orange;
 }
@@ -40,8 +40,8 @@ button {
 .game-area {
     display: grid;
     grid-gap: 5px;
-    grid-template-columns: repeat(3, 30vw);
-    grid-template-rows: repeat(3, 30vw);
+    grid-template-columns: repeat(3, 25vw);
+    grid-template-rows: repeat(3, 25vw);
     justify-content: center;
     
 }
@@ -67,8 +67,35 @@ button {
     .game-area {
         display: grid;
         grid-gap: 5px;
-        grid-template-columns: repeat(3, 20vw);
-        grid-template-rows: repeat(3, 20vw);
+        grid-template-columns: repeat(3, 15vw);
+        grid-template-rows: repeat(3, 15vw);
+        justify-content: center;
+        
+    }
+
+    .heading {
+        font-size: 30px;
+    }
+
+    button {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .time, .score {
+        font-size: 25px;
+        text-align: center;
+        color: orange;
+    }
+}
+
+
+@media screen and (min-width: 1440px) {
+    .game-area {
+        display: grid;
+        grid-gap: 5px;
+        grid-template-columns: repeat(3, 10vw);
+        grid-template-rows: repeat(3, 10vw);
         justify-content: center;
         
     }
@@ -84,33 +111,6 @@ button {
 
     .time, .score {
         font-size: 30px;
-        text-align: center;
-        color: orange;
-    }
-}
-}
-
-@media screen and (min-width: 1440px) {
-    .game-area {
-        display: grid;
-        grid-gap: 5px;
-        grid-template-columns: repeat(3, 10vw);
-        grid-template-rows: repeat(3, 10vw);
-        justify-content: center;
-        
-    }
-
-    .heading {
-        font-size: 60px;
-    }
-
-    button {
-        font-size: 50px;
-        text-align: center;
-    }
-
-    .time, .score {
-        font-size: 50px;
         text-align: center;
         color: orange;
     }

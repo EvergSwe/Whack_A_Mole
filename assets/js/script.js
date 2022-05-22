@@ -21,6 +21,11 @@ function startHard() {
    countDownSeconds();
 }
 
+// show game instruction
+function togglePopup() {
+   document.getElementById("popup-1").classList.toggle("active");
+}
+
 /**
  * when starting the game the the clock countdown starts from 60
  * time value reduce by 1 at an interval of 1s

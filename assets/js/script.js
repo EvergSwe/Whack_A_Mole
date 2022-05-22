@@ -35,8 +35,8 @@ function countDownSeconds() {
    time.innerHTML = newTime;
    
    if (newTime === -1) {
-      clearInterval(countDownTimer);
-      clearInterval(timer)
+      clearTimeout(countDownTimer);
+      clearTimeout(timer)
       time.innerHTML = 15; // change to 30 when finalizing
       score.innerHTML = 0;
       result = 0;

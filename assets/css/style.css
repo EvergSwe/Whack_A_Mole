@@ -4,7 +4,7 @@ body {
 }
 
 .heading {
-    font-size: 40px;
+    font-size: 30px;
     width: 100%;
 	text-align: center;
     color: orange;
@@ -14,11 +14,12 @@ body {
     display: grid;
     grid-template-columns: 30vw 30vw;
     grid-gap: 20px;
-    justify-content: center;   	
+    justify-content: center;
+      	
 }
 
 button {
-    font-size: 20px;
+    font-size: 15px;
     text-align: center;
     color: orange;
     background-color: blue;
@@ -31,7 +32,7 @@ button {
 }
 
 .time, .score {
-    font-size: 30px;
+    font-size: 20px;
     text-align: center;
     color: orange;
 }
@@ -71,6 +72,22 @@ button {
         justify-content: center;
         
     }
+
+    .heading {
+        font-size: 40px;
+    }
+
+    button {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .time, .score {
+        font-size: 30px;
+        text-align: center;
+        color: orange;
+    }
+}
 }
 
 @media screen and (min-width: 1440px) {
@@ -82,14 +99,19 @@ button {
         justify-content: center;
         
     }
+
+    .heading {
+        font-size: 60px;
+    }
+
     button {
-        font-size: 40px;
+        font-size: 50px;
         text-align: center;
     }
 
     .time, .score {
         font-size: 50px;
         text-align: center;
-        color: azure;
+        color: orange;
     }
 }

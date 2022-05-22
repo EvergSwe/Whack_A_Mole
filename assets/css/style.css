@@ -116,7 +116,7 @@ button {
 }
 
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1270px) {
     .game-area {
         display: grid;
         grid-gap: 5px;

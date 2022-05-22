@@ -37,7 +37,7 @@ function countDownSeconds() {
    if (newTime === -1) {
       clearTimeout(countDownTimer);
       clearTimeout(timer)
-      time.innerHTML = 15; // change to 30 when finalizing
+      time.innerHTML = 30;
       score.innerHTML = 0;
       result = 0;
       alert("GAME OVER!");

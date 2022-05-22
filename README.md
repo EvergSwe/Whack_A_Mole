@@ -1,6 +1,6 @@
 # Kayak Freedom
 
-![Responsive Test](/assests/img/.....
+![Responsive Test](/assests/.....
 
 [View website on GitHub pages](https://evergswe.github.io/Whack_A_Mole/)
 
@@ -20,7 +20,7 @@ Pen and paper were used to build up different versions of wireframes where multi
 ### Surface
  Natural color pattern chosed based on hero image toggle color picker of subject water, cliffs and sand to create consistancy between images and content.
  
- ![color_schema](/assests/img/color_schema1.png)
+ ![color_schema](/assests/.....)
  
  Font style of headings choosed in the sama natural theme and remaining text for primarly for readability.
 

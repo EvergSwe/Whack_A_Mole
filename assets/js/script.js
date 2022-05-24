@@ -29,8 +29,7 @@ function squareClicked(e) {
    if (e.target.id === moleLocation) {
       result++;
       score.innerHTML = result;
-      moleLocation = null;
-      
+      moleLocation = null;      
    }
 }
 
@@ -53,8 +52,8 @@ function startHard() {
 }
 
 // game instruction popup
-function togglePopup() {
-   document.getElementById("popup-1").classList.toggle("active");
+function togglePopupInfo() {
+   document.getElementById("popupinfo1").classList.toggle("active");
 }
 
 /**
@@ -73,13 +72,12 @@ function togglePopup() {
    if (newTime === -1) {
       clearTimeout(countDownTimer);
       clearTimeout(timer)
+      alert("GAME OVER!");
       time.innerHTML = 5;
       score.innerHTML = 0;
-      result = 0;
-      alert("GAME OVER!");
+      result = 0;      
       }
    }, 1000);
-
 }
 
 /**
@@ -98,6 +96,5 @@ function togglePopup() {
    randomSquare.classList.add("mole");
 
    moleLocation = randomSquare.id;
-
 }
 

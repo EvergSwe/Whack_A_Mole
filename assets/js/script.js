@@ -9,14 +9,13 @@ let moleLocation = null;
  * and calls the square clicked function
  */
 function init() {
-   console.log("init")
    let squares = document.getElementsByClassName("square");
    
    for (let square of squares) { 
       square.addEventListener("mousedown", (e) => {
          console.log("addEventListenere mousedown " + e.target.id);
          squareClicked(e);
-      })
+      });
    }
 }
 
@@ -40,6 +39,8 @@ function squareClicked(e) {
 function startEasy() {   
    timer = setInterval(randomSquare, 1000);
    countDownSeconds();
+   result = 0;
+   score.innerHTML = 0;
 }
 
 /**
@@ -49,6 +50,8 @@ function startEasy() {
 function startHard() {
    timer = setInterval(randomSquare, 600);
    countDownSeconds();
+   result = 0;
+   score.innerHTML = 0;
 }
 
 // game instruction popup
@@ -62,7 +65,6 @@ function togglePopupInfo() {
  * 
  * */
  function countDownSeconds() {
-
    time = document.getElementById("timeleft");
    countDownTimer = setInterval(function() {  
    newTime = time.innerHTML;
@@ -71,11 +73,9 @@ function togglePopupInfo() {
    
    if (newTime === -1) {
       clearTimeout(countDownTimer);
-      clearTimeout(timer)
-      alert("GAME OVER!");
-      time.innerHTML = 5;
-      score.innerHTML = 0;
-      result = 0;      
+      clearTimeout(timer);
+      alert("GAME OVER! You whacked " + result + " Moles");
+      time.innerHTML = 30;   
       }
    }, 1000);
 }

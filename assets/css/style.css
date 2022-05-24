@@ -1,10 +1,13 @@
+/*------------------------------------------------------*/
+/* Main body basic styling */
+
 body {
     margin: 10px;
     background-color: #2a3492;
 }
 
 .heading {
-    font-size: 20px;
+    font-size: 30px;
     width: 100%;
 	text-align: center;
     color: #ff9226;
@@ -60,7 +63,9 @@ body {
     display: grid;
     place-items: center;    
 }
-
+/*---------------------------------------------------------------------------*/
+/* Mole styling for in Game Mole which is 
+randomly placed in 1 of the 9 square div's */
 
 .mole {
     background-position: center;
@@ -68,6 +73,10 @@ body {
     background-size: 80%;
     background-image: url(../images/mole_in_game.png);    
 }
+/*----------------------------------------------------------------------------*/
+/* Game Insturction styling to gray out background and 
+to scale up the instruction box when button click activates
+the content */
 
 .popupinfo .overlay {
     position: fixed;
@@ -80,6 +89,7 @@ body {
     display: none;
 }
 
+/* Game Instruction box which is scaled 0 as default */
 .popupinfo .infocontent {
     position:absolute;
     top: 50%;
@@ -94,6 +104,7 @@ body {
     box-sizing: border-box;
 }
 
+/* Close x for the popup instruction */
 .popupinfo .close-btn {
     cursor: pointer;
     position: absolute;
@@ -116,6 +127,9 @@ body {
     transition: all 300ms ease-in-out;
     transform: translate(-50%, -50%) scale(1);
 }
+/*-----------------------------------------------------------------------------------*/
+/* Media queries to fit styling for differents screen sizes
+as defined in the min-width condition */
 
 @media screen and (min-width: 600px) {
     .game-area {

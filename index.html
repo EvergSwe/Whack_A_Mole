@@ -12,14 +12,18 @@
     <title>Whack A Mole</title>
     <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
 </head>
+
+<!-- body onload call init() function in .js to conferm load of page-->
 <body onload="init()">
 
     <h1 class="heading">Whack a Mole</h1>
 
+    <!-- time area added iteratively reduced by 1 second in .js loop and updated html-->
     <div class="time-area">
-        <h2 class="time">Time Left: <span id="timeleft">5</span> <span>seconds</span></h2>
+        <h2 class="time">Time Left: <span id="timeleft">30</span> <span>seconds</span></h2>
     </div>
 
+    <!--Game Area 3x3 matrix where Mole is randomly placed by adding and removing mole-class .js -->
     <div class="game-area" id="game-area">
         <div class="square" id="box0"></div>
         <div class="square" id="box1"></div>
@@ -33,13 +37,18 @@
 
     </div>
 
+    <!--Score Area are updated with score if a random placed Mole is hit by mosedown .js listenere-->
     <div class="score-area">
         <h2 class="score">Score: <span id="score">0</span></h2>
     </div>
+
+    <!-- Start Area has two buttons with onclick functions to start .js easy or hard level-->
     <div class="start-area">
         <button onclick="startEasy();" class="start-game">Easy Game</button>
         <button onclick="startHard();" class="start-game">Hard Game</button>
     </div>
+
+    <!-- Game Instruction popup to easely understand the game purpose-->
     <div class="popupinfo" id="popupinfo1">
         <div class="overlay"></div>
         <div class="infocontent">
@@ -50,7 +59,7 @@
                 Choose easy or hard difficulti level to start the game and try
                 to hit the mole. If you hit you will score! 
                 <br>
-                <img src="/assets/images/mole_in_game.png" alt="">
+                <img src="/assets/images/mole_in_game.png" alt="Mole Game Image">
                 <br>
                  GOOD LUCK!
             </p>
@@ -58,7 +67,7 @@
     </div>
     <div class="info-area">
         <button onclick="togglePopupInfo()" class="info-btn">Game Instructions</button>
-    </div>   
+    </div>
 
     <script src="assets/js/script.js"></script>
 </body>

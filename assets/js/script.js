@@ -1,7 +1,38 @@
 let score = document.getElementById("score");
 let result = 0;
 let timer = null;
+let moleLocation = null;
 
+/**
+ * Initial function called from html body
+ * adding mouse down listener to squares
+ * and calls the square clicked function
+ */
+function init() {
+   console.log("init")
+   let squares = document.getElementsByClassName("square");
+   
+   for (let square of squares) { 
+      square.addEventListener("mousedown", (e) => {
+         console.log("addEventListenere mousedown " + e.target.id);
+         squareClicked(e);
+      })
+   }
+}
+
+/**
+ * Check if square is clicked
+ * if clicked and mole is hit the score is increased by 1
+ * writes it back to html and mole location is set to null * 
+ */
+function squareClicked(e) {
+   if (e.target.id === moleLocation) {
+      result++;
+      score.innerHTML = result;
+      moleLocation = null;
+      
+   }
+}
 
 /**
  * onclick easy-game button, start easy game with interval 1s
@@ -21,7 +52,7 @@ function startHard() {
    countDownSeconds();
 }
 
-// show game instruction
+// game instruction popup
 function togglePopup() {
    document.getElementById("popup-1").classList.toggle("active");
 }
@@ -31,7 +62,7 @@ function togglePopup() {
  * time value reduce by 1 at an interval of 1s
  * 
  * */
-function countDownSeconds() {
+ function countDownSeconds() {
 
    time = document.getElementById("timeleft");
    countDownTimer = setInterval(function() {  
@@ -42,7 +73,7 @@ function countDownSeconds() {
    if (newTime === -1) {
       clearTimeout(countDownTimer);
       clearTimeout(timer)
-      time.innerHTML = 30;
+      time.innerHTML = 5;
       score.innerHTML = 0;
       result = 0;
       alert("GAME OVER!");
@@ -54,32 +85,19 @@ function countDownSeconds() {
 /**
  * remove "old" mole before randomly placing a "new"
  * generate random integer between 0-8 and place mole
- * check mouse down location if position == moleLocation if it does
- * increase score by one
  */
-function randomSquare() {
+ function randomSquare() {
 
    let squares = document.getElementsByClassName("square");
    
-   for (let i=0; i<squares.length; i++) { 
-   squares[i].classList.remove("mole");
+   for (let square of squares) { 
+   square.classList.remove("mole");
    }
 
    let randomSquare = squares[Math.floor(Math.random() * 9)]; 
    randomSquare.classList.add("mole");
 
-   let moleLocation = randomSquare.id;
-   
-   for (let i=0; i<squares.length; i++) {
-      squares[i].addEventListener("mousedown", function() {
-         if (squares[i].id == moleLocation) {
-            result++;
-            score.innerHTML = result;
-            moleLocation = null;
-            console.log(result)
-         }   
-      })
-   }
+   moleLocation = randomSquare.id;
 
 }
 

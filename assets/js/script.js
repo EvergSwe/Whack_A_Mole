@@ -13,7 +13,6 @@ function init() {
    
    for (let square of squares) { 
       square.addEventListener("mousedown", (e) => {
-         console.log("addEventListenere mousedown " + e.target.id);
          squareClicked(e);
       });
    }

@@ -44,7 +44,9 @@ Based on the given user stories input and web search for whack a mole games a ba
 
 ## Surface
 
-Surface are based on easy structure with color schemas following retro game style
+Different color schemas was explored and the final decision was to go for a retro game style with strong clear colors.
+Below collor shema was selected from where three colors where piced out to be used in the game, "blue" background, "green" grid
+and "orange" text.
 
 ![Color Schema Old Game](/assets/images/retro-game-by-schemecolor.png)
 
@@ -80,19 +82,21 @@ When timeleft is 0 an alert pops up with the message of score achived during the
 - add a hammer for hitting the mole
 - add a score message at the mole when hit
 - add a mole animation when hit
+- bug fix
 
 # Testing
 
 ### Feature testing
-Manual tests has been performed according to below test procedure. One bug has been detacted related to re-start of game and 
+Manual tests has been performed according to below test cases. One bug has been detacted related to re-start of game and 
 Mole left from previouse game. When hitting the Mole you can gain one additional score prior to re-starting the game. Bug is 
-acceptable as it har only minor impact to score.
+acceptable as it has only minor impact to score.
 
 ![Test Case Whack A Mole](/assets/images/TestCase_Whack_A_Mole.PNG)
 
 
 ### Browser interface testing (UI)
-Below procesers has been available and used for testing the UI.
+Below browsers have been available and used for testing the UI. Responsiveness has an acceptable level with most frequent screen sizes
+managed in CSS media queries. Further improvement can be achieved with defining more media queries or re-design stylsheet.
 
 - Google Chrome (desktop device)
 Game UI as expected however could be improved
@@ -154,17 +158,19 @@ Automated testing of html, css programming language has been done by using third
 - Two issues detected during tesing
   - You could gain one additonal score prior to restarting game 
   - Image in Game Instruction popup does not render and alt text is displayed in Safari on mobile device
-In all the test result is accaptable with regards to both functional tests as well as UI tests. 
+<br>
+In all the test result is accaptable with regards to both functional tests as well as UI tests and . Identified bugs is to
+be addressed and solved in next increment.
 
 # Deployment
 
 ### Github deployment steps
 
 1. Login into https://github.com/
-2. Select Kayak_Classes -> https://github.com/EvergSwe/Kayak_Classes
+2. Select Whack_A_Mole -> https://github.com/EvergSwe/Whack_A_Mole
 3. Select Settings
-4. Scroll down to Gibhub Pages and select the link to dedicated tab
-5. Go to source drop down and select branch main, root and Save
+4. Select Pages in the left menue
+5. Select branch main, root and Save
 6. Page is now successfully published on Github Pages
 
 # Credits
